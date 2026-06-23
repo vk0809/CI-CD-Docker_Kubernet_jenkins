@@ -8,7 +8,7 @@ pipeline {
         }
         stage ('build') {
             steps {
-                sh "docker build -t vk0908/flask-app:$(BUILD_NUMBER) ."
+                sh "docker build -t vk0908/flask-app:${BUILD_NUMBER} ."
             }
         }
         stage ('push') {
